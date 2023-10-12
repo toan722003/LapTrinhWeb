@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+</head>
+<body>
+<div class="container">
+    <div class="from-register">
+        <div class="form_group">
+            <div class="title">
+                Account
+            </div>
+        </div>
+        <div class="form_group">
+            <div class="input_container">
+                <i class="fa fa-user"></i>
+                <input type="text" id="username" placeholder="Full Name">
+            </div>
+        </div>
+        <div class="form_group">
+            <div class="input_container">
+                <i class="fa fa-envelope"></i>
+                <input type="text" id="email" placeholder="Email Address">
+            </div>
+        </div>
+        <div class="form_group">
+            <div class="input_container">
+                <i class="fa fa-key"></i>
+                <input type="text" id="password" placeholder="Password">
+            </div>
+        </div>
+        <div class="form_group" style="margin-bottom: 0px">
+            <div class="title" style="width: 50%">
+                Date of birth
+            </div>
+            <div class="title" style="width: 50%">
+                Gender
+            </div>
+        </div>
+        <div class="form_group">
+            <div class="dmy">
+                <input id="date" placeholder="DD">
+                <input id="month" placeholder="MM">
+                <input id="year" placeholder="YY">
+            </div>
+            <div class="gender">
+                <button onclick="onClickButtonGender()" id="male" style="height: 57.6px;">Male</button>
+                <button onclick="onClickButtonGender()" id="female" style="height: 57.6px;">Female</button>
+            </div>
+        </div>
+        <div class="title">
+            Payment Details
+        </div>
+        <div class="form_group">
+            <button id="credit_card"><i class="fa-brands fa-cc-visa" style="padding-right: 5px"></i>Credit Card</button>
+            <button id="paypal"><i class="fa-brands fa-cc-paypal" style="padding-right: 5px"></i>Paypal</button>
+        </div>
+        <div class="form_group" style="height: 49px;">
+            <div class="input_container">
+                <i class="fa fa-credit-card"></i>
+                <input type="text" id="card_number" placeholder="Card Number">
+            </div>
+        </div>
+        <div class="form_group" style="height: 49px;">
+            <div class="input_container" style="width: 50%">
+                <i class="fa fa-person"></i>
+                <input type="text" id="card" placeholder="Card CVC" style="padding-right: 0px">
+            </div>
+            <div class="gender" style="width: 50%">
+                <div class="date_picker">
+                    <input type="text" id="date_picker" placeholder="1 Jane" style="width: 45%"><i
+                        class="fa-solid fa-caret-up fa-rotate-180"></i>
+                </div>
+                <div class="date_picker">
+                    <input type="text" class="year_picker" placeholder="2015" style="width: 45%"/><i
+                        class="fa-solid fa-caret-up fa-rotate-180"></i>
+                </div>
+            </div>
+        </div>
+        <div class="title" style="padding-bottom: 5px">Term and Conditions</div>
+        <div class="form_group">
+            <input type="checkbox" id="terms" name="terms" value="terms">
+            <label for="terms" style="color: #c2bdbd;"> I accept the terms and conditionals for signing up to this
+                service, and hereby confirm I have read the privacy policy</label><br>
+        </div>
+    </div>
+</div>
+<script>
+    const onClickButtonGender = function () {
+        var buttonMale = document.getElementById("male");
+        var buttonFemale = document.getElementById("female");
+        if (buttonMale.classList.toggle('active')) {
+            buttonMale.style.background = "#7ED321";
+            buttonMale.style.color = "#fff";
+        }else {
+            buttonMale.style.background = "#7ED321";
+            buttonMale.style.color = "#fff";
+        }
+        if (buttonFemale.classList.toggle('active')) {
+            buttonFemale.style.background = "#7ED321";
+            buttonFemale.style.color = "#fff";
+        }
+    };
+</script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+</body>
+</html>

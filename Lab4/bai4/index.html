@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <textarea id="content" style="width: 500px;height: 200px">Ngày hôm nay tôi đã cúp hai ca học CSDL vì tôi nhác đi học.
+    Tôi không biết cô có điểm danh không, nếu điểm danh thì tôi vắng học</textarea>
+    <br>
+    <input type="text" name="" id="input-search"> <br>
+    result:<span id="result"></span> <br>
+    <button id="submit" onclick="calculate()">Submit</button>
+</div>
+<script>
+    function calculate() {
+        content = document.getElementById("content").value;
+        input = document.getElementById("input-search").value;
+        content = content.trim();
+        result = document.getElementById("result");
+
+        var count = 0;
+        while (content.includes(input)) {
+            count++;
+            var index = content.indexOf(input);
+            content = content.slice(index + input.length);
+        }
+        result.innerHTML = count;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="container" style="width: 1024px;height: 600px;margin: auto">
+    <img src="anh.jpg" width="100px" height="200px" alt="" style="padding: 100px">
+</div>
+<script>
+    $(document).ready(function () {
+
+            var dolech = 0;
+            var animation = function () {
+                dolech += 15;
+                $('img').css('transform', 'rotate(' + dolech + 'deg)');
+            };
+            setInterval(animation, 500);
+        }
+    );
+    // $(function () {
+    //
+    // });
+</script>
+</body>
+</html>

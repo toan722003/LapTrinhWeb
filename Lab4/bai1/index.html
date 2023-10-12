@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="buttons">
+        <button class="button_red" onclick="setColorBody('red')">Red</button>
+        <button class="button_blue" onclick="setColorBody('blue')">Blue</button>
+        <button class="button_yellow" onclick="setColorBody('yellow')">Yellow</button>
+        <button class="button_green" onclick="setColorBody('green')">Green</button>
+        <button class="button_pink" onclick="setColorBody('pink')">Pink</button>
+        <button class="button_purple" onclick="setColorBody('purple')">Purple</button>
+    </div>
+</div>
+<script>
+    function setColorBody(color) {
+        document.body.style.background = color;
+    }
+
+</script>
+</body>
+</html>
