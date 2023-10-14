@@ -1,0 +1,149 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: #e3e3e3;
+    font-family: Arial, Tahoma;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 535px;
+    height: 770px;
+    background: #ffffff;
+    border-radius: 5px;
+    padding: 43px;
+}
+
+
+.container .from-register .title {
+    color: #7ED321;
+    padding-bottom: 23px;
+    font-weight: bold;
+}
+
+.form_group {
+    display: flex;
+    margin-bottom: 12px;
+    padding-left: 0px;
+}
+
+.input_container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    border: 1px solid #EDEDED;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #F9F9F9;
+}
+
+.input_container i {
+    font-size: 16px;
+    color: grey;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.input_container input {
+    border: none;
+    border-left: 1px solid #e3e3e3;
+    padding: 5px 10px;
+    outline: none;
+}
+
+.input_container input#username:focus {
+    outline: none;
+}
+
+.form_group .dmy {
+    display: flex;
+    width: 50%;
+}
+
+#date, #month, #year {
+    border: 1px solid #E5E5E5;
+    border-radius: 5px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 14px;
+    margin-right: 12px;
+    background-color: #F9F9F9;
+    position: relative;
+    width: 46px;
+}
+
+
+.form_group .gender {
+    width: 55%;
+    display: flex;
+    margin-left: 0px;
+}
+
+#male, #female {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 50%;
+    height: 50px;
+    margin-right: 0.5px;
+    border: 1px solid #EDEDED;
+    background-color: #F9F9F9;
+    border-radius: 3px;
+    color: #c2bdbd;
+}
+
+.form_group #credit_card, #paypal {
+    width: 50%;
+    padding-bottom: 18px;
+    padding-top: 18px;
+    color: #B9B9B9;
+    background: #F9F9F9;
+    border-radius: 3px;
+    border: #E5E5E5 solid 1px;
+}
+
+#credit_card:hover, #paypal:hover {
+    background-color: #7ED321;
+    color: #fff;
+}
+
+.form_group .input_container input#card::placeholder {
+    width: 20%;
+}
+
+.form_group .gender .date_picker {
+    border-radius: 3px;
+    border: 1px solid #E5E5E5;
+    margin-left: 10px;
+    padding-top: 17px;
+    text-align: center;
+    padding-bottom: 17px;
+}
+
+.form_group .gender .date_picker input {
+    border: none;
+    padding-right: 20px;
+}
+
+.form_group input #terms {
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-right: 10px;
+    margin-right: 10px;
+    text-align: unset;
+    align-content: unset;
+    align-items: unset;
+    align-self: unset;
+}
+
+.submit-btn #submitForm {
+    margin: auto;
+}
+
+
+
+
